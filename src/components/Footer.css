@@ -1,0 +1,12 @@
+footer a:hover {
+  color: #0d6efd !important; /* Bootstrap primary hover renk */
+  transition: color 0.3s ease;
+}
+.footer-text {
+  text-align: center;           /* Yazıyı yatayda ortala */
+  display: flex;
+  justify-content: center;      /* Yatay ortalama */
+  align-items: center;          /* Dikey ortalama (yüksekliği varsa) */
+  flex-wrap: wrap;              /* Çok satırlıysa düzgün kalsın */
+  padding: 0.5rem 1rem;
+}

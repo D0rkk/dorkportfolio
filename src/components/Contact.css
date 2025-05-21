@@ -1,0 +1,8 @@
+.section a {
+  color: #00d1b2;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+
+.content {
+   margin-left: 220px;
+  padding: 2rem;
+  width: 100%;
+  background-color: #121212;
+  color: white;
+}
+
+/* Responsive: 768px altı için sidebar'ı üstte göster ve içerik altına al */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+  .content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+button.z-3 {
+  z-index: 9999;
+}

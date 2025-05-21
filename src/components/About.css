@@ -1,0 +1,19 @@
+.section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00d1b2; 
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+#about {
+  scroll-margin-top: 80px; 
+}
+

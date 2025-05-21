@@ -1,0 +1,81 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  background-color: #1f1f1f;
+  color: white;
+  padding-top: 2rem;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin: 1rem 0;
+  text-align: center; /* Ortala */
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  font-weight: 600; /* Kalın */
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar-nav a:hover {
+  color: #00d1b2;
+  font-weight: 700; /* Hover'da daha kalın */
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 101;
+  background: #00d1b2;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    transform: translateX(0) !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+

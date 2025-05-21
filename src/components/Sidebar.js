@@ -9,7 +9,7 @@ const Sidebar = ({ darkMode }) => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  // Sayfa dışında bir yere tıklanırsa menüyü kapat
+ 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (

@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Kişisel Portfolyo',
     description: 'React ve Bootstrap kullanarak oluşturduğum bu portfolyo sitesi, mobil uyumlu ve modern tasarıma sahiptir.',
-    link: 'https://github.com/D0rkk/portfolio',
+    link: 'https://github.com/D0rkk/dorkportfolio',
   },
   {
     title: 'Donanım Takip Uygulaması',

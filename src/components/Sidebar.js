@@ -6,7 +6,10 @@ const Sidebar = ({ darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+   const toggleMenu = () => {
+    setIsOpen(prev => !prev);
+    console.log("Menu is now", !isOpen ? "Open" : "Closed");
+  };
   const closeMenu = () => setIsOpen(false);
 
  
@@ -31,7 +34,7 @@ const Sidebar = ({ darkMode }) => {
 
   return (
     <>
-      {/* Mobil Menü Butonu */}
+     
       <button
         className={`menu-toggle btn btn-outline-${darkMode ? 'light' : 'dark'} d-md-none position-fixed top-0 start-0 m-3 z-3`}
         onClick={toggleMenu}
@@ -39,13 +42,13 @@ const Sidebar = ({ darkMode }) => {
         ☰
       </button>
 
-      {/* Sidebar */}
+     
       <aside
         ref={sidebarRef}
         className={`sidebar ${sidebarClass} d-flex flex-column align-items-center p-4 position-fixed h-100 ${isOpen ? 'open' : ''}`}
-        style={{ width: '240px', zIndex: 2 }}
+        style={{ width: '240px', zIndex: 999 }}
       >
-        {/* Profil Fotoğrafı */}
+       
         <div className="mb-3">
           <img
             src="/profile.jpeg"
@@ -55,10 +58,10 @@ const Sidebar = ({ darkMode }) => {
           />
         </div>
 
-        {/* Ad */}
+        
         <h4 className="mb-4">Önder Doruk</h4>
 
-        {/* Navigasyon */}
+       
         <nav className="sidebar-nav w-100">
           <ul className="nav flex-column text-center">
             <li className="nav-item">

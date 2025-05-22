@@ -14,7 +14,7 @@
   color: white;
 }
 
-/* Responsive: 768px altı için sidebar'ı üstte göster ve içerik altına al */
+
 @media (max-width: 768px) {
   .App {
     flex-direction: column;
